@@ -1,0 +1,47 @@
+:root {
+  /* Основные фоны */
+  --vp-c-bg: #0F0518;
+  --vp-c-bg-alt: #1E0F33;
+  --vp-c-bg-soft: #251445;
+
+  /* Текст */
+  --vp-c-text-1: #FFFFFF;
+  --vp-c-text-2: #D1C4E9;
+  --vp-c-text-3: #9575CD;
+
+  /* Акцентные цвета (бренд) */
+  --vp-c-brand-1: #B388FF;
+  --vp-c-brand-2: #7C4DFF;
+  --vp-c-brand-3: #00E5D1;
+
+  /* Границы */
+  --vp-c-border: #3A1F5C;
+  --vp-c-divider: #3A1F5C;
+}
+/* docs/.vitepress/theme/custom.css */
+
+/* 1. Определяем шрифт для обычного текста (400) */
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/fonts/cascadia-code/static/CascadiaCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Определяем шрифт для жирного текста (700) */
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/fonts/cascadia-code/static/CascadiaCode-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. Указываем VitePress использовать этот шрифт везде */
+:root {
+  /* Основной шрифт для текста */
+  --vp-font-family-base: 'Cascadia Code', monospace;
+  /* Шрифт для блоков кода и inline-кода */
+  --vp-font-family-mono: 'Cascadia Code', monospace;
+}
