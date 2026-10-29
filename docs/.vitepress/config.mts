@@ -1,13 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Catharsis",
+  title: "Catharsis Prog",
   description: "Учебники по программированию",
+
+  appearance: true, // переключатель темы остаётся; светлая — инвертированная
 
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Java', link: '/java/' }
+      { text: 'Java', link: '/java/' },
+      { text: 'О проекте', link: '/about' }
     ],
 
     sidebar: {
@@ -53,6 +56,13 @@ export default defineConfig({
                 { text: '2.9. wait(), notify(), notifyAll()', link: '/java/concurrency/02-synchronization/09-wait-notify' },
                 { text: 'Практикум', link: '/java/concurrency/02-synchronization/practice' },
                 { text: 'Разборы практикума', link: '/java/concurrency/02-synchronization/practice-solutions' }
+              ]
+            },
+            {
+              text: 'Модуль 3. Высокоуровневая координация',
+              collapsed: false,
+              items: [
+                { text: '3.1. CountDownLatch', link: '/java/concurrency/03-coordination/01-countdown-latch' }
               ]
             }
           ]

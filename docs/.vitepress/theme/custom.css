@@ -1,26 +1,7 @@
-:root {
-  /* Основные фоны */
-  --vp-c-bg: #0F0518;
-  --vp-c-bg-alt: #1E0F33;
-  --vp-c-bg-soft: #251445;
+/* ============================================================
+   Шрифт
+   ============================================================ */
 
-  /* Текст */
-  --vp-c-text-1: #FFFFFF;
-  --vp-c-text-2: #D1C4E9;
-  --vp-c-text-3: #9575CD;
-
-  /* Акцентные цвета (бренд) */
-  --vp-c-brand-1: #B388FF;
-  --vp-c-brand-2: #7C4DFF;
-  --vp-c-brand-3: #00E5D1;
-
-  /* Границы */
-  --vp-c-border: #3A1F5C;
-  --vp-c-divider: #3A1F5C;
-}
-/* docs/.vitepress/theme/custom.css */
-
-/* 1. Определяем шрифт для обычного текста (400) */
 @font-face {
   font-family: 'Cascadia Code';
   src: url('/fonts/cascadia-code/static/CascadiaCode-Regular.ttf') format('truetype');
@@ -29,7 +10,6 @@
   font-display: swap;
 }
 
-/* 2. Определяем шрифт для жирного текста (700) */
 @font-face {
   font-family: 'Cascadia Code';
   src: url('/fonts/cascadia-code/static/CascadiaCode-Bold.ttf') format('truetype');
@@ -38,10 +18,162 @@
   font-display: swap;
 }
 
-/* 3. Указываем VitePress использовать этот шрифт везде */
 :root {
-  /* Основной шрифт для текста */
   --vp-font-family-base: 'Cascadia Code', monospace;
-  /* Шрифт для блоков кода и inline-кода */
   --vp-font-family-mono: 'Cascadia Code', monospace;
+}
+
+/* ============================================================
+   Светлая тема — инвертированная
+   Фон бирюзовый, кнопки и акценты фиолетовые
+   ============================================================ */
+
+:root {
+  /* Фон */
+  --vp-c-bg: #E8FAF6;
+  --vp-c-bg-alt: #D4F4EE;
+  --vp-c-bg-soft: #C8F0E8;
+  --vp-c-bg-elv: #F0FDFA;
+
+  /* Текст */
+  --vp-c-text-1: #0F0518;
+  --vp-c-text-2: #2D1B4E;
+  --vp-c-text-3: #512DA8;
+
+  /* Бренд — фиолетовый */
+  --vp-c-brand-1: #7C4DFF;
+  --vp-c-brand-2: #512DA8;
+  --vp-c-brand-3: #B388FF;
+  --vp-c-brand-soft: rgba(124, 77, 255, 0.16);
+
+  /* Границы */
+  --vp-c-border: #B388FF;
+  --vp-c-divider: #C8B3E0;
+  --vp-c-gutter: #C8B3E0;
+
+  /* Нейтральные элементы */
+  --vp-c-default-1: #2D1B4E;
+  --vp-c-default-2: #512DA8;
+  --vp-c-default-3: #7C4DFF;
+  --vp-c-default-soft: rgba(124, 77, 255, 0.12);
+
+  /* Кнопки brand */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #FFFFFF;
+  --vp-button-brand-bg: #7C4DFF;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #FFFFFF;
+  --vp-button-brand-hover-bg: #512DA8;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #FFFFFF;
+  --vp-button-brand-active-bg: #4527A0;
+
+  /* Кнопки alt — контурные фиолетовые */
+  --vp-button-alt-border: #7C4DFF;
+  --vp-button-alt-text: #7C4DFF;
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: #7C4DFF;
+  --vp-button-alt-hover-text: #FFFFFF;
+  --vp-button-alt-hover-bg: #7C4DFF;
+  --vp-button-alt-active-border: #512DA8;
+  --vp-button-alt-active-text: #FFFFFF;
+  --vp-button-alt-active-bg: #512DA8;
+
+  /* Hero name — градиент из фиолетовых */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #7C4DFF 30%, #B388FF);
+
+  /* Hero image — если появится */
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #7C4DFF 50%, #00BFA5 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* ============================================================
+   Тёмная тема — исходная палитра
+   Фон тёмно-фиолетовый, кнопки светло-фиолетовые, акценты бирюзовые
+   ============================================================ */
+
+.dark {
+  /* Фон */
+  --vp-c-bg: #0F0518;
+  --vp-c-bg-alt: #1E0F33;
+  --vp-c-bg-soft: #251445;
+  --vp-c-bg-elv: #2A1847;
+
+  /* Текст */
+  --vp-c-text-1: #FFFFFF;
+  --vp-c-text-2: #D1C4E9;
+  --vp-c-text-3: #9575CD;
+
+  /* Бренд */
+  --vp-c-brand-1: #B388FF;
+  --vp-c-brand-2: #7C4DFF;
+  --vp-c-brand-3: #00E5D1;
+  --vp-c-brand-soft: rgba(179, 136, 255, 0.16);
+
+  /* Границы */
+  --vp-c-border: #3A1F5C;
+  --vp-c-divider: #3A1F5C;
+  --vp-c-gutter: #3A1F5C;
+
+  /* Нейтральные элементы */
+  --vp-c-default-1: #D1C4E9;
+  --vp-c-default-2: #B388FF;
+  --vp-c-default-3: #7C4DFF;
+  --vp-c-default-soft: rgba(179, 136, 255, 0.12);
+
+  /* Кнопки brand */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #0F0518;
+  --vp-button-brand-bg: #B388FF;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #0F0518;
+  --vp-button-brand-hover-bg: #00E5D1;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #0F0518;
+  --vp-button-brand-active-bg: #00BFA5;
+
+  /* Кнопки alt — контурные фиолетовые */
+  --vp-button-alt-border: #B388FF;
+  --vp-button-alt-text: #B388FF;
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: #B388FF;
+  --vp-button-alt-hover-text: #0F0518;
+  --vp-button-alt-hover-bg: #B388FF;
+  --vp-button-alt-active-border: #7C4DFF;
+  --vp-button-alt-active-text: #FFFFFF;
+  --vp-button-alt-active-bg: #7C4DFF;
+
+  /* Hero name */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #B388FF 30%, #00E5D1);
+
+  /* Hero image */
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #00E5D1 50%, #7C4DFF 50%);
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+/* ============================================================
+   Дополнительно: блоки, код, ссылки
+   ============================================================ */
+
+/* Inline-код в светлой теме — на бирюзовом фоне должен контрастировать */
+:root :not(pre) > code {
+  background-color: rgba(124, 77, 255, 0.10);
+  color: #4527A0;
+}
+
+.dark :not(pre) > code {
+  background-color: rgba(179, 136, 255, 0.12);
+  color: #B388FF;
+}
+
+/* Блоки кода в светлой теме — светлый фон с фиолетовой окантовкой */
+:root div[class*='language-'] {
+  background-color: #F0FDFA;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.dark div[class*='language-'] {
+  background-color: var(--vp-c-bg-alt);
 }
