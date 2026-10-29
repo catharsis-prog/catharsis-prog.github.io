@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Catharsis",
   description: "Учебники по программированию",
-  base: '/',
 
   themeConfig: {
     nav: [
@@ -12,26 +11,32 @@ export default defineConfig({
     ],
 
     sidebar: {
-      // Эта панель будет показана, когда пользователь находится в разделе /java/
       '/java/': [
         {
           text: 'Java',
           items: [
-            { text: 'Введение', link: '/java/' },
-            { text: 'Многопоточность', link: '/java/concurrency/' },
-            { text: 'Основы потоков', link: '/java/concurrency/threads-basics' }
-            // ... другие уроки
+            { text: 'Введение', link: '/java/' }
+          ]
+        },
+        {
+          text: 'Многопоточность',
+          items: [
+            { text: 'О разделе', link: '/java/concurrency/' },
+            {
+              text: 'Модуль 1. Основы потоков',
+              collapsed: false,
+              items: [
+                { text: '1.1. Что такое поток и зачем он нужен', link: '/java/concurrency/01-basics/01-what-is-thread' }
+              ]
+            }
           ]
         }
       ]
-      // Сюда можно добавить панель для Python в будущем:
-      // '/python/': [ ... ]
     }
   },
+
   transformHead({ assets }) {
-    const fontFile = assets.find(file =>
-      /CascadiaCode-Regular.*\.(woff2|ttf)$/.test(file)
-    )
+    const fontFile = assets.find(file => /CascadiaCode-Regular.*\.(woff2|ttf)$/.test(file))
     if (fontFile) {
       return [[
         'link',
