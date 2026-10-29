@@ -4,7 +4,7 @@ export default defineConfig({
   title: "Catharsis Prog",
   description: "Учебники по программированию",
 
-  appearance: true, // переключатель темы остаётся; светлая — инвертированная
+  appearance: true,
 
   themeConfig: {
     nav: [
@@ -62,7 +62,11 @@ export default defineConfig({
               text: 'Модуль 3. Высокоуровневая координация',
               collapsed: false,
               items: [
-                { text: '3.1. CountDownLatch', link: '/java/concurrency/03-coordination/01-countdown-latch' }
+                { text: '3.1. CountDownLatch', link: '/java/concurrency/03-coordination/01-countdown-latch' },
+                { text: '3.2. CyclicBarrier', link: '/java/concurrency/03-coordination/02-cyclic-barrier' },
+                { text: '3.3. Semaphore', link: '/java/concurrency/03-coordination/03-semaphore' },
+                { text: '3.4. Exchanger и Phaser', link: '/java/concurrency/03-coordination/04-exchanger-phaser' },
+                { text: '3.5. Lock и Condition', link: '/java/concurrency/03-coordination/05-lock-condition' }
               ]
             }
           ]
