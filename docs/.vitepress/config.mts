@@ -26,7 +26,8 @@ export default defineConfig({
               text: 'Модуль 1. Основы потоков',
               collapsed: false,
               items: [
-                { text: '1.1. Что такое поток и зачем он нужен', link: '/java/concurrency/01-basics/01-what-is-thread' }
+                { text: '1.1. Что такое поток и зачем он нужен', link: '/java/concurrency/01-basics/01-what-is-thread' },
+                { text: '1.2. Создание потока: Thread vs Runnable', link: '/java/concurrency/01-basics/02-thread-vs-runnable' }
               ]
             }
           ]
