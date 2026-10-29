@@ -27,7 +27,8 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '1.1. Что такое поток и зачем он нужен', link: '/java/concurrency/01-basics/01-what-is-thread' },
-                { text: '1.2. Создание потока: Thread vs Runnable', link: '/java/concurrency/01-basics/02-thread-vs-runnable' }
+                { text: '1.2. Создание потока: Thread vs Runnable', link: '/java/concurrency/01-basics/02-thread-vs-runnable' },
+                { text: '1.3. start() vs run()', link: '/java/concurrency/01-basics/03-start-vs-run' }
               ]
             }
           ]
