@@ -29,7 +29,8 @@ export default defineConfig({
                 { text: '1.1. Что такое поток и зачем он нужен', link: '/java/concurrency/01-basics/01-what-is-thread' },
                 { text: '1.2. Создание потока: Thread vs Runnable', link: '/java/concurrency/01-basics/02-thread-vs-runnable' },
                 { text: '1.3. start() vs run()', link: '/java/concurrency/01-basics/03-start-vs-run' },
-                { text: '1.4. Жизненный цикл потока', link: '/java/concurrency/01-basics/04-lifecycle' }
+                { text: '1.4. Жизненный цикл потока', link: '/java/concurrency/01-basics/04-lifecycle' },
+                { text: '1.5. sleep(), join(), yield()', link: '/java/concurrency/01-basics/05-sleep-join-yield' }
               ]
             }
           ]
