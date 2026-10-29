@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Catharsis Prog"
   text: "Учебники по программированию"
-  tagline: "Простота. Восторг."
+  tagline: "Необыкновенный восторг."
   actions:
     - theme: brand
       text: "Начать с Java"
