@@ -30,7 +30,12 @@ export default defineConfig({
                 { text: '1.2. Создание потока: Thread vs Runnable', link: '/java/concurrency/01-basics/02-thread-vs-runnable' },
                 { text: '1.3. start() vs run()', link: '/java/concurrency/01-basics/03-start-vs-run' },
                 { text: '1.4. Жизненный цикл потока', link: '/java/concurrency/01-basics/04-lifecycle' },
-                { text: '1.5. sleep(), join(), yield()', link: '/java/concurrency/01-basics/05-sleep-join-yield' }
+                { text: '1.5. sleep(), join(), yield()', link: '/java/concurrency/01-basics/05-sleep-join-yield' },
+                { text: '1.6. Прерывание потоков', link: '/java/concurrency/01-basics/06-interrupt' },
+                { text: '1.7. Имена, приоритеты, currentThread()', link: '/java/concurrency/01-basics/07-name-priority-current' },
+                { text: '1.8. Демон-потоки', link: '/java/concurrency/01-basics/08-daemon' },
+                { text: 'Практикум', link: '/java/concurrency/01-basics/practice' },
+                { text: 'Разборы практикума', link: '/java/concurrency/01-basics/practice-solutions' }
               ]
             }
           ]
