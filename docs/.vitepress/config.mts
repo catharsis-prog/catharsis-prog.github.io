@@ -66,7 +66,9 @@ export default defineConfig({
                 { text: '3.2. CyclicBarrier', link: '/java/concurrency/03-coordination/02-cyclic-barrier' },
                 { text: '3.3. Semaphore', link: '/java/concurrency/03-coordination/03-semaphore' },
                 { text: '3.4. Exchanger и Phaser', link: '/java/concurrency/03-coordination/04-exchanger-phaser' },
-                { text: '3.5. Lock и Condition', link: '/java/concurrency/03-coordination/05-lock-condition' }
+                { text: '3.5. Lock и Condition', link: '/java/concurrency/03-coordination/05-lock-condition' },
+                { text: 'Практикум', link: '/java/concurrency/03-coordination/practice' },
+                { text: 'Разборы практикума', link: '/java/concurrency/03-coordination/practice-solutions' }
               ]
             }
           ]
