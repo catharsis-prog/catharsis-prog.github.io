@@ -37,6 +37,23 @@ export default defineConfig({
                 { text: 'Практикум', link: '/java/concurrency/01-basics/practice' },
                 { text: 'Разборы практикума', link: '/java/concurrency/01-basics/practice-solutions' }
               ]
+            },
+            {
+              text: 'Модуль 2. Синхронизация',
+              collapsed: false,
+              items: [
+                { text: '2.1. Гонка данных', link: '/java/concurrency/02-synchronization/01-race-condition' },
+                { text: '2.2. Критическая секция и synchronized', link: '/java/concurrency/02-synchronization/02-synchronized' },
+                { text: '2.3. synchronized на уровне класса и объекта', link: '/java/concurrency/02-synchronization/03-synchronized-class-vs-object' },
+                { text: '2.4. volatile', link: '/java/concurrency/02-synchronization/04-volatile' },
+                { text: '2.5. Модель памяти Java и happens-before', link: '/java/concurrency/02-synchronization/05-jmm-happens-before' },
+                { text: '2.6. Атомарные классы', link: '/java/concurrency/02-synchronization/06-atomic-classes' },
+                { text: '2.7. Deadlock', link: '/java/concurrency/02-synchronization/07-deadlock' },
+                { text: '2.8. Livelock и starvation', link: '/java/concurrency/02-synchronization/08-livelock-starvation' },
+                { text: '2.9. wait(), notify(), notifyAll()', link: '/java/concurrency/02-synchronization/09-wait-notify' },
+                { text: 'Практикум', link: '/java/concurrency/02-synchronization/practice' },
+                { text: 'Разборы практикума', link: '/java/concurrency/02-synchronization/practice-solutions' }
+              ]
             }
           ]
         }
