@@ -11,10 +11,6 @@ export default defineConfig({
   // Как только модуль появляется — уберите соответствующее правило,
   // иначе перестанете замечать настоящие опечатки в путях этого модуля.
   ignoreDeadLinks: [
-    // Многопоточность: модули 4–7 в разработке
-    /\/04-pools\//,
-    /\/05-collections\//,
-    /\/06-async\//,
     /\/07-advanced\//,
   ],
 
@@ -152,7 +148,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Введение в раздел', link: '/java/concurrency/' },
-            
+
             {
               text: 'Модуль 1. Основы потоков',
               collapsed: true,
@@ -202,63 +198,48 @@ export default defineConfig({
               ],
             },
 
-            // ------------------------------------------------------
-            // Модуль 4. Пулы потоков и Executor Framework (в разработке)
-            // Когда уроки готовы: раскомментируйте блок и уберите
-            // /\/04-pools\// из ignoreDeadLinks выше.
-            // ------------------------------------------------------
-            // {
-            //   text: 'Модуль 4. Пулы потоков',
-            //   collapsed: true,
-            //   items: [
-            //     { text: '1. Зачем нужны пулы потоков', link: '/java/concurrency/04-pools/01-why-pools' },
-            //     { text: '2. ExecutorService и Executors', link: '/java/concurrency/04-pools/02-executor-service' },
-            //     { text: '3. ThreadPoolExecutor изнутри', link: '/java/concurrency/04-pools/03-thread-pool-executor' },
-            //     { text: '4. ScheduledExecutorService', link: '/java/concurrency/04-pools/04-scheduled-executor' },
-            //     { text: '5. Корректное завершение пула', link: '/java/concurrency/04-pools/05-shutdown' },
-            //     { text: '6. ForkJoinPool и RecursiveTask', link: '/java/concurrency/04-pools/06-fork-join-pool' },
-            //     { text: 'Практикум', link: '/java/concurrency/04-pools/practice' },
-            //     { text: 'Разбор практикума', link: '/java/concurrency/04-pools/practice-solutions' },
-            //   ],
-            // },
+            {
+              text: 'Модуль 4. Пулы потоков',
+              collapsed: true,
+              items: [
+                { text: '1. Зачем нужны пулы потоков', link: '/java/concurrency/04-pools/01-why-pools' },
+                { text: '2. ExecutorService и Executors', link: '/java/concurrency/04-pools/02-executor-service' },
+                { text: '3. ThreadPoolExecutor изнутри', link: '/java/concurrency/04-pools/03-thread-pool-executor' },
+                { text: '4. ScheduledExecutorService', link: '/java/concurrency/04-pools/04-scheduled-executor' },
+                { text: '5. Корректное завершение пула', link: '/java/concurrency/04-pools/05-shutdown' },
+                { text: '6. ForkJoinPool и RecursiveTask', link: '/java/concurrency/04-pools/06-fork-join-pool' },
+                { text: 'Практикум', link: '/java/concurrency/04-pools/practice' },
+                { text: 'Разбор практикума', link: '/java/concurrency/04-pools/practice-solutions' },
+              ],
+            },
 
-            // ------------------------------------------------------
-            // Модуль 5. Потокобезопасные коллекции (в разработке)
-            // Когда уроки готовы: раскомментируйте блок и уберите
-            // /\/05-collections\// из ignoreDeadLinks выше.
-            // ------------------------------------------------------
-            // {
-            //   text: 'Модуль 5. Потокобезопасные коллекции',
-            //   collapsed: true,
-            //   items: [
-            //     { text: '1. Почему ArrayList и HashMap не потокобезопасны', link: '/java/concurrency/05-collections/01-why-not-thread-safe' },
-            //     { text: '2. ConcurrentHashMap', link: '/java/concurrency/05-collections/02-concurrent-hash-map' },
-            //     { text: '3. CopyOnWriteArrayList', link: '/java/concurrency/05-collections/03-copy-on-write' },
-            //     { text: '4. BlockingQueue и producer-consumer', link: '/java/concurrency/05-collections/04-blocking-queue' },
-            //     { text: '5. Неблокирующие очереди', link: '/java/concurrency/05-collections/05-concurrent-queues' },
-            //     { text: '6. BlockingDeque и SynchronousQueue', link: '/java/concurrency/05-collections/06-blocking-deque' },
-            //     { text: 'Практикум', link: '/java/concurrency/05-collections/practice' },
-            //     { text: 'Разбор практикума', link: '/java/concurrency/05-collections/practice-solutions' },
-            //   ],
-            // },
+            {
+              text: 'Модуль 5. Потокобезопасные коллекции',
+              collapsed: true,
+              items: [
+                { text: '1. Почему ArrayList и HashMap не потокобезопасны', link: '/java/concurrency/05-collections/01-why-not-thread-safe' },
+                { text: '2. ConcurrentHashMap', link: '/java/concurrency/05-collections/02-concurrent-hash-map' },
+                { text: '3. CopyOnWriteArrayList', link: '/java/concurrency/05-collections/03-copy-on-write' },
+                { text: '4. BlockingQueue и producer-consumer', link: '/java/concurrency/05-collections/04-blocking-queue' },
+                { text: '5. Неблокирующие очереди', link: '/java/concurrency/05-collections/05-concurrent-queues' },
+                { text: '6. BlockingDeque и SynchronousQueue', link: '/java/concurrency/05-collections/06-blocking-deque' },
+                { text: 'Практикум', link: '/java/concurrency/05-collections/practice' },
+                { text: 'Разбор практикума', link: '/java/concurrency/05-collections/practice-solutions' },
+              ],
+            },
 
-            // ------------------------------------------------------
-            // Модуль 6. Асинхронность (в разработке)
-            // Когда уроки готовы: раскомментируйте блок и уберите
-            // /\/06-async\// из ignoreDeadLinks выше.
-            // ------------------------------------------------------
-            // {
-            //   text: 'Модуль 6. Асинхронность',
-            //   collapsed: true,
-            //   items: [
-            //     { text: '1. Future и Callable', link: '/java/concurrency/06-async/01-future-callable' },
-            //     { text: '2. CompletableFuture: создание и цепочки', link: '/java/concurrency/06-async/02-completable-future-basics' },
-            //     { text: '3. CompletableFuture: ошибки и таймауты', link: '/java/concurrency/06-async/03-completable-future-errors' },
-            //     { text: '4. Параллельные стримы', link: '/java/concurrency/06-async/04-parallel-streams' },
-            //     { text: 'Практикум', link: '/java/concurrency/06-async/practice' },
-            //     { text: 'Разбор практикума', link: '/java/concurrency/06-async/practice-solutions' },
-            //   ],
-            // },
+            {
+              text: 'Модуль 6. Асинхронность',
+              collapsed: true,
+              items: [
+                { text: '1. Future и Callable', link: '/java/concurrency/06-async/01-future-callable' },
+                { text: '2. CompletableFuture: создание и цепочки', link: '/java/concurrency/06-async/02-completable-future-basics' },
+                { text: '3. CompletableFuture: ошибки и таймауты', link: '/java/concurrency/06-async/03-completable-future-errors' },
+                { text: '4. Параллельные стримы', link: '/java/concurrency/06-async/04-parallel-streams' },
+                { text: 'Практикум', link: '/java/concurrency/06-async/practice' },
+                { text: 'Разбор практикума', link: '/java/concurrency/06-async/practice-solutions' },
+              ],
+            },
 
             // ------------------------------------------------------
             // Модуль 7. Продвинутое (в разработке)
