@@ -7,6 +7,20 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  // Пока уроки не написаны, ссылки на них в index.md ведут в никуда.
+  // Как только урок появляется — убирайте соответствующую строку отсюда,
+  // иначе перестанете замечать опечатки в путях к этому модулю.
+  ignoreDeadLinks: [
+    // Файл существует, но без расширения .md — нужно переименовать
+    // Урок и практикум модуля 4 ещё не написаны
+    '/java/oop/04-polymorphism/07-strategy-pattern',
+    '/java/oop/04-polymorphism/practice',
+    // Модуль 5 ещё не написан целиком
+    '/java/oop/05-composition/',
+    // Модуль 6 ещё не написан целиком
+    '/java/oop/06-design-and-solid/',
+  ],
+
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
