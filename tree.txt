@@ -39,6 +39,44 @@
 │   │   │   └── index.md
 │   │   ├── index.md
 │   │   └── oop
+│   │       ├── 01-classes-and-objects
+│   │       │   ├── 01-why-oop.md
+│   │       │   ├── 02-class-vs-object.md
+│   │       │   ├── 03-fields-and-methods
+│   │       │   ├── 04-constructors.md
+│   │       │   ├── 05-references-and-null.md
+│   │       │   ├── 06-static.md
+│   │       │   ├── 07-garbage-and-finalize.md
+│   │       │   ├── practice.md
+│   │       │   └── practice-solutions.md
+│   │       ├── 02-encapsulation
+│   │       │   ├── 01-why-hide-data.md
+│   │       │   ├── 02-access-modifiers.md
+│   │       │   ├── 03-getters-and-setters.md
+│   │       │   ├── 04-validation.md
+│   │       │   ├── 05-immutable-objects.md
+│   │       │   ├── 06-wrappers-and-record.md
+│   │       │   ├── practice.md
+│   │       │   └── practice-solutions.md
+│   │       ├── 03-inheritance
+│   │       │   ├── 01-is-a.md
+│   │       │   ├── 02-extends.md
+│   │       │   ├── 03-super.md
+│   │       │   ├── 04-overriding.md
+│   │       │   ├── 05-final-in-inheritance.md
+│   │       │   ├── 06-abstract-classes.md
+│   │       │   ├── 07-when-inheritance-is-wrong.md
+│   │       │   ├── practice.md
+│   │       │   └── practice-solutions.md
+│   │       ├── 04-polymorphism
+│   │       │   ├── 01-one-interface-many-behaviors.md
+│   │       │   ├── 02-dynamic-binding.md
+│   │       │   ├── 03-interfaces.md
+│   │       │   ├── 04-default-methods.md
+│   │       │   ├── 05-polymorphism-in-collections.md
+│   │       │   └── 06-type-casting.md
+│   │       ├── 05-composition
+│   │       ├── 06-design-and-solid
 │   │       └── index.md
 │   ├── markdown-examples.md
 │   └── public
@@ -4366,4 +4404,4 @@
 ├── test.md
 └── tree.txt
 
-361 directories, 4006 files
+367 directories, 4038 files
