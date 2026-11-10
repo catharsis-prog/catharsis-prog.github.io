@@ -241,24 +241,20 @@ export default defineConfig({
               ],
             },
 
-            // ------------------------------------------------------
-            // Модуль 7. Продвинутое (в разработке)
-            // Когда уроки готовы: раскомментируйте блок и уберите
-            // /\/07-advanced\// из ignoreDeadLinks выше.
-            // ------------------------------------------------------
-            // {
-            //   text: 'Модуль 7. Продвинутое',
-            //   collapsed: true,
-            //   items: [
-            //     { text: '1. ThreadLocal', link: '/java/concurrency/07-advanced/01-thread-local' },
-            //     { text: '2. Виртуальные потоки', link: '/java/concurrency/07-advanced/02-virtual-threads' },
-            //     { text: '3. Structured Concurrency', link: '/java/concurrency/07-advanced/03-structured-concurrency' },
-            //     { text: '4. Неизменяемость как стратегия', link: '/java/concurrency/07-advanced/04-immutability' },
-            //     { text: '5. Диагностика и отладка', link: '/java/concurrency/07-advanced/05-diagnostics' },
-            //     { text: 'Практикум', link: '/java/concurrency/07-advanced/practice' },
-            //     { text: 'Разбор практикума', link: '/java/concurrency/07-advanced/practice-solutions' },
-            //   ],
-            // },
+            {
+              text: 'Модуль 7. Продвинутое',
+              collapsed: true,
+              items: [
+                { text: '1. ThreadLocal', link: '/java/concurrency/07-advanced/01-thread-local' },
+                { text: '2. Виртуальные потоки', link: '/java/concurrency/07-advanced/02-virtual-threads' },
+                { text: '3. Structured Concurrency', link: '/java/concurrency/07-advanced/03-structured-concurrency' },
+                { text: '4. Неизменяемость как стратегия', link: '/java/concurrency/07-advanced/04-immutability' },
+                { text: '5. Диагностика и отладка', link: '/java/concurrency/07-advanced/05-diagnostics' },
+                { text: 'Практикум', link: '/java/concurrency/07-advanced/practice' },
+                { text: 'Разбор практикума', link: '/java/concurrency/07-advanced/practice-solutions' },
+              ],
+            },
+            { text: 'Финальный проект', link: '/java/concurrency/final-project' },
           ],
         },
       ],
